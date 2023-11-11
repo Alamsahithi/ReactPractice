@@ -1,14 +1,14 @@
 import './ExpenseItem.css'
-function ExpenseItem(){
+function ExpenseItem(props){
     const title = 'car'
     return(
         <div className='expense-item'>
       <div>
-        Date
+        {props.date.toISOString()}
       </div>
       <div className='expense-item__description'>
-        <h2>{title}</h2>
-        <div className='expense-item__price'>amount</div>
+        <h2>{props.title}</h2>
+        <div className='expense-item__price'>{props.amount}</div>
       </div>
     </div>
     )
