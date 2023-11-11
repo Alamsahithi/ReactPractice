@@ -1,5 +1,5 @@
 import React from "react"
-import ExpenseItem from "./components/ExpenseItem"
+import ExpenseItem from "./components/expenses/ExpenseItem"
 function App(){
   const expenses =[
     { title:'Car Insurance',amount:5000 ,date:new Date(2023,2,28)},
