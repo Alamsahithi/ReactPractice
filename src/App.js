@@ -8,10 +8,12 @@ function App(){
     { title:'Car Insurance',amount:5000 ,date:new Date(2023,2,28)},
     { title:'Car Insurance',amount:5000 ,date:new Date(2023,2,28)},
   ]
-  
+  const addExpensezhandler = expense =>{
+    console.log('in app.js')
+  }
  return (
   <div>
-    <NewExpense/>
+    <NewExpense onAddExpense={addExpensezhandler}/>
     <Expenses items={expenses}/>
   </div>
  )
